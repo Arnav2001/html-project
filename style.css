@@ -1,0 +1,100 @@
+*{
+    padding: 0%;
+    margin: 0;
+}
+body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family:'inter';
+}
+
+.hero-div {
+    display: flex;
+    width: 100%;
+    height: 70vh; /* 50% of viewport height */
+    background-color: #FFCD9E;
+}
+
+iframe {
+    overflow: hidden;
+    height: 30vh; /* 50% of viewport height */
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #282828;
+}
+.left-div{
+    max-width: 40%;
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    width: 60%;
+}
+.right-div{
+    width: 40%;
+}
+
+.right-img{
+    padding-left: 10%;
+    padding-top:5%;
+    height: 60vh;
+    width: 60vh;
+}
+h2{
+padding-bottom:10px;
+font-size: 36px;
+font-weight: 700;
+line-height: 54px;
+}
+.subHeading{
+    padding-right: 20%;
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 500;
+}
+b{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 32px;
+}
+.register-div{
+    display: flex;
+    flex-direction: row;
+    padding-right: 10%;
+}
+.input-div {
+    width: 100%;
+    margin-right: 10px; /* Add margin to the right */
+    display: flex;
+    flex-direction: column;
+}
+.input-div p{
+    padding-top: 3%;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+}
+input {
+    height: 6vh;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+    border: 4px solid #000000; 
+    border-radius: 8px;
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+}
+button{
+    border-radius: 8px;
+    background-color:#282828;
+    color: white;
+    width: 33%;
+    height: 6vh;
+    cursor: pointer;
+}
+
