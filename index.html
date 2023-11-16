@@ -6,7 +6,6 @@
     <title>Assignment 1</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
-
 </head>
 <body>
     <div class="hero-div">
@@ -14,14 +13,28 @@
             <h2>An inspiring design delivered to your inbox every morning</h2>
             <p class="subHeading">Our team scouts the internet for the best designs, illustrations and art and delivers a truly inspiring one every day to your inbox</p>
             <b>Show me how it looks</b>
-            <div class="register-div">
+            <div class="register-div" id="registerDiv">
                 <div class="input-div">
-                    <input type="text" placeholder="Your e-mail address">
+                    <input type="text" id="emailInput" placeholder="Your e-mail address">
                     <p class="white-p">Free - No Spam - No Data Sharing</p>
                 </div>
                 
-                <button> Register Now</button>
+                <button onclick="convertDiv()"> Register Now</button>
             </div>
+            <script>
+                function convertDiv() {
+                  // Get input value
+                  var emailInputValue = document.getElementById('emailInput').value;
+                  console.log(emailInputValue);
+                  // Create a new div with the thank you text
+                  var thankYouDiv = document.createElement('div');
+                  thankYouDiv.innerHTML = '<p>Thank you, ' + emailInputValue + ', for registering!</p>';
+            
+                  // Replace the register div with the thank you div
+                  var registerDiv = document.getElementById('registerDiv');
+                  registerDiv.parentNode.replaceChild(thankYouDiv, registerDiv);
+                }
+              </script>
         </div>
         <div class="right-div">
             <img class="right-img" src="assets/dweep io 1.png" alt="dweep io 1 image">
